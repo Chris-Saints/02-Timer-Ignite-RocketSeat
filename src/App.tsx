@@ -11,13 +11,15 @@ import { CyclesContextProvider } from './contexts/CyclesContexts';
 export function App() {
 
 
-
+  //Aqui é onde o CyclesContextProvider esta Abraçando seus componentes filhos
   return (
   <ThemeProvider theme={defaultTheme}>
     <BrowserRouter>
+
       <CyclesContextProvider>
         
         <Router />
+        
       </CyclesContextProvider>
       
         

@@ -6,6 +6,8 @@ import { ptBR } from 'date-fns/locale/pt-BR'
 
 export function History() {
 
+
+    //Aqui é simples, Importa o CyclesContext para acessar o Array de Cycles Criados e a Partir dela renderizar cada item do array com o map
     const { cycles } = useContext(CyclesContext)
  
     return (

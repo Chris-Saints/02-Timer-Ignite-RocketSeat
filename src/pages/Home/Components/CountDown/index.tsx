@@ -6,10 +6,10 @@ import { CyclesContext } from "../../../../contexts/CyclesContexts";
 export function CountDown() {
 
     const { activeCycle, activeCycleId, markCurrentCycleAsFinished, amountSecondePassed, setSecondsPassed } = useContext(CyclesContext)
-
-
-
+    
     const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0;
+    
+    //Aqui é toda a logica do tempo passando e Tambem quando o tempo acabar qual ação deve tomar
 
     useEffect(() => {
         let interval: number
@@ -49,6 +49,8 @@ export function CountDown() {
     const minutes = String(minutesAmount).padStart(2, '0');
     const seconds = String(secondsAmount).padStart(2, '0');
     
+
+    //Imprimir os valores colocados de tempo
     useEffect(() => {
         if (activeCycle) {
             document.title = `${minutes}:${seconds}`
@@ -56,7 +58,7 @@ export function CountDown() {
     
     }, [minutes, seconds, activeCycle])
 
-    return(
+    return( 
         <CountdownContainer>
             <span>{minutes[0]}</span>
             <span>{minutes[1]}</span>
