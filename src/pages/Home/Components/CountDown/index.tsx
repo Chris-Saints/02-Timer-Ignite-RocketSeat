@@ -50,7 +50,7 @@ export function CountDown() {
     const seconds = String(secondsAmount).padStart(2, '0');
     
 
-    //Imprimir os valores colocados de tempo
+    //Imprimir os valores colocados de tempo no titulo da aba
     useEffect(() => {
         if (activeCycle) {
             document.title = `${minutes}:${seconds}`
