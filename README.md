@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+<h1 align="center">Timer Ignite</h1>
+<div align="center">
+ <img alt="Static Badge" src="https://img.shields.io/badge/stats-conclu%C3%ADdo-brightgreen?style=flat-square">
+ <img alt="Static Badge" src="https://img.shields.io/badge/style-Styled Components-blue?style=flat-square">
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+<img width="1853" height="576" alt="Captura de tela 2026-02-10 131314" src="https://github.com/user-attachments/assets/476778ad-5d3b-49b3-b3d8-03526b85c166" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+<br>
 
-## Expanding the ESLint configuration
+<p>Timer Ignite é um projeto feito para temporizar algum processo ou atividade que o usuário deseja. O timer funciona de 5 em 5 minutos. O projeto também possui um histórico que te mostra outros momentos em que o usuário usou o Timer, mostrando qual foi a duração, quanto tempo fez desde que foi criado e se ele foi interrompido, concluído ou está em andamento. E mesmo que o usuário troque de tela ou aba, o Timer continua a correr.
+  <br />
+  <br />
+Nesse Projeto feito junto do curso da RocketSeat foi implementado hooks como <strong>useContext</strong> e <strong>useForm</strong>, e processos para uma estrutura de projeto organizada.
+  <br />
+  <br />
+É o primeiro projeto em que trabalhei com <strong>styled-components</strong>.
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Funcionalidades do projeto
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- `Criar uma Tarefa`: Você pode escolher aumentar ou diminuir o level de qualquer carta, de 0 à 10.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `Iniciar o timer`: Preenchendo o nome da tarefa e quantos minutos você deseja(min: 5 min e max: 60 min). Depois clicando no botão "começar".
+![Imagem sobre aplaudir o comentário](https://github.com/user-attachments/assets/5b2e4ce3-d48b-4800-9642-53f74199226d)
+  
+- `interromper o timer`: Quando iniciado, pode-se interromper o Timer clicando no botão que ficou vermelho escrito "Interromper".
+![Imagem sobre aplaudir o comentário](https://github.com/user-attachments/assets/19aced90-f29f-41cc-99a0-fbe0a30ec6a5)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `Histórico`: Mostra uma lista de Tarefas coms suas durações, stats(Em andamento, concluída ou interrompida) e a quanto tempo foi criada.
+![Imagem sobre aplaudir o comentário](https://github.com/user-attachments/assets/24c48ada-9c54-496a-af53-57a5b1df1780)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+
+
+
+# Técnicas e tecnologias usadas
+- `React + Vite`
+- `Styled-components`
+- `TypeScript`
+- `useState`
+- `useEffect`
+- `useContext`
+- `useReducer`
+- `UseForm`
+- `Zod`
+
+
+# Autor
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/200855458?v=4" width=115><br><sub>Christian Picoli</sub>](https://github.com/Chris-Saints)
